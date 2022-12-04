@@ -22,7 +22,6 @@ def get_priority(character):
     else:
         return ord(character)-38
 
-
 sum = 0
 for line in lines:
     length = len(line)
@@ -31,5 +30,4 @@ for line in lines:
     print("first:", line[first_half], " - second:", line[second_half])
 
     sum += get_priority(find_duplicate_char(line[first_half], line[second_half]))
-
 print(sum)
